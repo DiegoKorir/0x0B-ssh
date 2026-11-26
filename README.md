@@ -7,9 +7,13 @@ Passwordless SSH setup using an RSA key pair, a client config and puppet
 |          File            |                       Purpose                                         |
 
 | 0-create_ssh_key_pair.sh | Creates a 4096-bit RSA key pair named school with a passphrase        |
+
 | 1-submit_public_key.sh   | Prints ~/.ssh/school.pub with a reminder to share only the public key |
+
 | 2-use_a_private_key.sh   | Connects to the server using the key ~/.ssh/school                    |
+
 | 3-ssh_config.sh          | Writes ~/.ssh/config to use the school key and disable password login |
+
 | 100-puppet_ssh_config.pp | Puppet manifest that sets the same options in the SSH client config   |
 
 ## Usage
